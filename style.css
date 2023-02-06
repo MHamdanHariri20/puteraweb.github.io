@@ -1,0 +1,371 @@
+body{
+    overflow-x: hidden;
+}
+
+.gedung img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 630px;
+    position: absolute;
+    filter: brightness(60%);
+}
+
+nav{
+    padding-top: 20px;
+    width: 100%;
+    box-shadow: 0 0 20px 3px black;
+} 
+
+.container-fluid{
+    padding: 5px;
+}
+
+.navbar-brand{
+    margin-left: 60px;
+}
+
+.nav-item{
+    margin-left: 10px;
+}
+
+.d-flex{
+    margin-right: 60px;
+}
+
+.autoplay{
+    font-size: 45px;
+    max-width: 60%;
+    font-weight: 500;
+    color: white;
+    justify-content: center;
+    left: 220px;
+    bottom: 30px;
+}
+
+.home{
+    position: relative;
+    top: 170px;
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+.home p{
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.plans .top{
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.card{
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+
+.card svg{
+    width: 40px;
+    height: 40px;
+    margin: 20px 0 10px 80px;
+}
+
+.card b{
+    color: blue;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.column1 .img1{
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.column1 .img2{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -320px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.column2{
+    max-width: 48%;
+    margin-left: 50px;
+}
+
+.column2 b{
+    font-size: 30px;
+}
+
+.innovation{
+    background-color: rgb(15, 15, 68);
+    width: 100%;
+    padding: 70px 117px 70px 200px;
+}
+
+.innovation .top{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.innovation .top .card{
+    width: 300px;
+    background-color: transparent;
+    border: 1px solid grey;
+}
+
+.innovation .top .card-title{
+    width: 300px;
+}
+
+.innovation .top .card-body{
+    color: white;
+}
+
+.innovation .top .card svg{
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+
+.innovation .top .card-body b{
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.innovation .top .card-body p{
+    font-size: 12px;
+}
+
+footer{
+    border: solid 0.5px black;
+}
+
+footer .container{
+    max-width: 1200px;
+}
+
+footer .container .footer-content .footer-brand b{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+footer .container .footer-content .footer-desc p{
+    font-size: 14px;
+    color: var(--text-muted-color);
+    margin-bottom: 20px;
+}
+
+footer .container .footer-content .footer-social a{
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: var(--text-muted-color);
+}
+
+footer .container .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 52px 0;
+}
+
+footer .container .footer-content .footer-item{
+    max-width: 400px;
+}
+
+footer .container .footer-content .footer-item h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer .container .footer-content .footer-item .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .footer-content .footer-item .menu a{
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-muted-color);
+    margin: 5px 0;
+}
+
+footer .container .footer-content .footer-item .no-telp p{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+footer .container .copy{
+    margin: 0 0;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+    .innovation .top .card{
+        width: 250px;
+    }
+    
+
+    .innovation .top .card-title{
+        width: 250px;
+    }
+
+    .plans .top{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-item{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .autoplay{
+        justify-content: center;
+        left: 50px;
+        bottom: 30px;
+        max-width: 600px;
+    }
+
+    .innovation .top{
+        max-width: 600px;
+        margin-left: 25px;
+    }
+
+
+    .navbar-toggler{
+        margin-right: 50px;
+    }
+
+    .center{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        justify-content: center;
+    }
+    
+    .column1 .img1{
+        position: relative;
+        z-index: 4;
+        max-width: 260px;
+        box-shadow: 0 0 10px 0 black;
+    }
+    
+    .column1 .img2{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -270px;
+        max-width: 300px;
+        max-height: 145px;
+        box-shadow: 0 0 10px 0 black;
+    }
+    
+    .column2{
+        max-width: 49%;
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .center{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        justify-content: center;
+    }
+    
+    .column1 .img1{
+        position: relative;
+        z-index: 4;
+        max-width: 260px;
+        box-shadow: 0 0 10px 0 black;
+    }
+    
+    .column1 .img2{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -270px;
+        max-width: 300px;
+        max-height: 145px;
+        box-shadow: 0 0 10px 0 black;
+    }
+    
+    .column2{
+        max-width: 49%;
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+
+    .innovation{
+        padding: 70px 100px 70px 100px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .autoplay{
+        font-size: 35px;
+        left: 0px;
+    }
+
+    .center{
+        display: flex;
+        row-gap: 60px;
+        flex-wrap: wrap;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        justify-content: center;
+    }
+    
+    .column1 .img1{
+        position: relative;
+        z-index: 4;
+        max-width: 260px;
+        box-shadow: 0 0 10px 0 black;
+    }
+    
+    .column1 .img2{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -270px;
+        max-width: 300px;
+        max-height: 145px;
+        box-shadow: 0 0 10px 0 black;
+    }
+    
+    .column2{
+        max-width: 70%;
+        margin-top: -20px;
+        margin-left: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+}
